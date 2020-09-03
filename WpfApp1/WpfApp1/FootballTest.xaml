@@ -1,0 +1,66 @@
+﻿<Window x:Class="WpfApp1.FootballTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FootballTest" Height="450" Width="800">
+    <Grid Background="LightCoral">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Margin="5" Background="Gray">
+            <Image Height="90" Source="https://img.playbuzz.com/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,e_sharpen/v1566566284/uq4tra6d0suhdneevjjx.jpg"></Image>
+            <TextBlock TextWrapping="Wrap" Margin="10" >Кто забил за сборную Украины в первом официальном матче?</TextBlock>
+            <RadioButton GroupName="1Q">Сергей Беженар</RadioButton>
+            <RadioButton GroupName="1Q">Олег Саленко</RadioButton>
+            <RadioButton x:Name="answer1" GroupName="1Q">Иван Гецко</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="5" Background="Gray">
+            <TextBlock TextWrapping="Wrap" Margin="10" >В истории сборной Украины было 11 тренеров (без учета и.о.). Но лишь один из них ни разу не знал горечи поражения у руля сборной. О ком речь?</TextBlock>
+            <RadioButton GroupName="1Q">Виктор Прокапенко</RadioButton>
+            <RadioButton GroupName="1Q">Олег Базилевич</RadioButton>
+            <RadioButton GroupName="1Q">Анатолий Коньков</RadioButton>
+            <RadioButton x:Name="answer2" GroupName="1Q">Мирон Маркевич</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="2" Margin="5" Background="Gray">
+            <TextBlock TextWrapping="Wrap" Margin="10" >Кто из этих игроков никогда не становился лучшим снайпером сезона в Высшей Лиге / УПЛ?</TextBlock>
+            <RadioButton x:Name="answer3" GroupName="1Q">Тайсон</RadioButton>
+            <RadioButton GroupName="1Q">Георгий Деметрадзе</RadioButton>
+            <RadioButton GroupName="1Q">Милевский</RadioButton>
+            <RadioButton GroupName="1Q">Ковпак</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5" Background="Gray">
+            <TextBlock TextWrapping="Wrap" Margin="10" >Какой из следующих брендов не являлся производителем экипировки для сборной?</TextBlock>
+            <RadioButton GroupName="1Q">Пума</RadioButton>
+            <RadioButton x:Name="answer4" GroupName="1Q">Рибук</RadioButton>
+            <RadioButton GroupName="1Q">Умбра</RadioButton>
+            <RadioButton GroupName="1Q">Лото</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5" Background="Gray">
+            <Image Height="90" Source="https://img.playbuzz.com/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,e_sharpen/v1566567135/t3rlb47x9wwfvrs9icxh.jpg"></Image>
+            <TextBlock TextWrapping="Wrap" Margin="10" >Какой из этих городов не принимал решающий матч кубка Украины?</TextBlock>
+            <RadioButton GroupName="1Q">Сумы</RadioButton>
+            <RadioButton GroupName="1Q">Львов</RadioButton>
+            <RadioButton x:Name="answer5" GroupName="1Q">Одесса</RadioButton>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="5" Background="Gray">
+            <TextBlock TextWrapping="Wrap" Margin="10" >Сборная Украины встречалась с 68 разными сборными с четырех континентов. С какой сборной «желто-синие» ни разу не пересекались?</TextBlock>
+            <RadioButton GroupName="1Q">Иран</RadioButton>
+            <RadioButton GroupName="1Q">Чили</RadioButton>
+            <RadioButton x:Name="answer6" GroupName="1Q">Ирландия</RadioButton>
+            <RadioButton GroupName="1Q">Камерун</RadioButton>
+        </StackPanel>
+        <Button x:Name="finishtestButton" Content="Закончить тест"  Grid.Row="2" Grid.ColumnSpan="3" Margin="15,0,15,0" Background="BlueViolet" Click="finishtestButton_Click"></Button>
+    </Grid>
+</Window>
