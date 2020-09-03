@@ -24,5 +24,11 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Csharp_Click(object sender, RoutedEventArgs e)
+        {
+            Fossa22984WindowTest fossa22984 = new Fossa22984WindowTest();
+            fossa22984.Show();
+        }
     }
 }

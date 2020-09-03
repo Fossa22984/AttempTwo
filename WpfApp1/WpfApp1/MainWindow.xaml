@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+         Title="MainWindow" MaxHeight="800" MaxWidth="800" Height="800" Width="800" MinHeight="800" MinWidth="800">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image Source="C:\Users\Student\Desktop\AttempTwo_\WpfApp1\WpfApp1\Image\1.png" Width="200">
+        </Image>
+        <Label Grid.Row="1" Content="Tests" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" FontSize="25">
+        </Label>
 
+        <Label Content="Знание C#" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20"></Label>
+        <Label Content="Литература" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="20"></Label>
+        <Label Content="Футбол Украины" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="20"></Label>
+        <Label Content="Тест на Коронавирус" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20"></Label>
+
+        <Button x:Name="Csharp" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Height="30" Width="100" Click="Csharp_Click"></Button>
+        <Button x:Name="Literat" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Height="30" Width="100"></Button>
+        <Button x:Name="footBall" Content="Start" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Row="1" Height="30" Width="100"></Button>
+        <Button x:Name="TestKorona" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="2" Height="30" Width="100"></Button>
     </Grid>
 </Window>
