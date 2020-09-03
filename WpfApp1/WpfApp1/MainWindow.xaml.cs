@@ -30,5 +30,17 @@ namespace WpfApp1
             Fossa22984WindowTest fossa22984 = new Fossa22984WindowTest();
             fossa22984.Show();
         }
+
+        private void Literat_Click(object sender, RoutedEventArgs e)
+        {
+            LiteratureTestWindow literature = new LiteratureTestWindow();
+            literature.Show();
+        }
+
+        private void footBall_Click(object sender, RoutedEventArgs e)
+        {
+            FootballTest football = new FootballTest();
+            football.Show();
+        }
     }
 }
